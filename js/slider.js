@@ -108,29 +108,24 @@ jQuery(document).ready(function(){
 
 	 $('body').on("click", "#slide li img", function () { //show lightBox if image clicked
         if ($(this).attr("src") != "") {
-			var li = $(this);
-			i = li.parent().index() + 1;
-			console.log(i);
+			i = $(this).parent().data("num");
             $("#bigImg").attr("src", $(this).attr("src"));
             $("#lightBox").show().fadeTo(200, 1);
         }
     });
 
 	$(document).on("click", "#closeLightBox", function () { //hide lightBox 
-		$(".container").removeClass("blur");
         $("#lightBox").stop(true).fadeTo(200, 0, function () {
             $("#lightBox").hide();
         });
     });
 	
 	function changeSource(i) {
-		var imgSrc = $('.slide [data-num="'+i+'"] img');		console.log(imgSrc);
-	
+		var imgSrc = $('#slide [data-num="'+i+'"] img');
 		$("#bigImg").attr("src", imgSrc.attr("src"));
 	}
 	
 	$(document).on("click", "#nextImg", function () {
-		console.log(i);
 		if(i != slidesAmount){
 			i++;
 			changeSource(i);
