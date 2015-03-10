@@ -1,0 +1,243 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:hover                        { text-decoration:none; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header {
+	overflow:hidden;
+	width:600px;
+	margin:30px auto 0;
+	position:relative;
+}
+
+.thumbsWrap {
+	overflow:hidden;
+	width:600px;
+	margin:0 auto;
+	position:relative;
+}
+ul#slide {
+	position:relative;
+	overflow:hidden;
+	width:1e+7px;
+}
+
+ul li {
+	float:left;
+}
+
+li.item {
+	cursor:pointer;
+	position:relative;
+	width:600px;
+}
+
+li.item img{
+	width:100%;
+}
+
+#bigSlidePrev {
+	background: url('../images/slider-arrows1.png');
+    border: medium none;
+    cursor: pointer;
+    height: 48px;
+    position: absolute;
+    top: 45%;
+    width: 48px;
+    z-index: 0;
+	left:5px;
+}
+
+#bigSlidePrev:hover {
+	background-position:0 -48px;
+}
+#bigSlideNext {
+	background: url('../images/slider-arrows1.png') 48px 0;
+    border: medium none;
+    cursor: pointer;
+    height: 48px;
+    position: absolute;
+    top: 45%;
+    width: 48px;
+    z-index: 0;
+	right:5px;
+}
+
+#bigSlideNext:hover {
+	background-position:48px -48px;
+}
+
+#thumbsPrev {
+    background: url("../images/slider-arrows@2x.png") repeat scroll -9px 43px / 129px auto rgba(0, 0, 0, 0);
+    border: medium none;
+	border-radius: 50%;
+    cursor: pointer;
+    height: 35px;
+    position: absolute;
+    top: 28%;
+    width: 35px;
+    z-index: 0;
+	left:5px;
+}
+
+
+#thumbsNext {
+    background: url("../images/slider-arrows@2x.png") repeat scroll 43px 43px / 129px auto rgba(0, 0, 0, 0);
+    border: medium none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 35px;
+    position: absolute;
+    right: 5px;
+    top: 28%;
+    width: 35px;
+    z-index: 0;
+}
+
+
+
+
+ul.thumbs {
+	position:relative;
+	overflow:hidden;
+	width:9999px;
+	margin:0 0 0 -6px;
+}
+
+ul.thumbs li{
+	opacity:0.5;
+	cursor:pointer;
+	margin:0 0 0 6px;
+	width:115px;
+}
+
+
+ul.thumbs li img{
+	width:100%;
+}
+
+ul.thumbs li:hover{
+	opacity:1;
+}
+
+ul.thumbs li.active{
+	opacity:1;
+	transition:0.5s;
+}
+
+#lightBox {
+	padding:30px 0 0;
+	position: absolute;
+	top: 0; 
+	width: 100%; 
+	height: 100%; 
+	display: none; 
+	opacity: 0; 
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.50);
+}
+
+#lightBox img{
+	border:5px solid white;
+	border-radius:5px;
+}
+
+#lightBox a{
+	cursor:pointer;
+	background:url("../images/sprite.png") no-repeat;
+	display:block;
+	width:27px;
+	height:27px;
+	color:white;
+	position:absolute;
+	right:0;
+}
+
+#lightBox #closeLightBox {
+	top:2px;
+	background-position:-52px 1px;
+}
+
+#lightBox #nextImg {
+	top:53px;
+	background-position:-26px 1px;
+}
+
+#lightBox #prevImg {
+	top:82px;
+	background-position:0 1px;
+}
+
+#lightBox #closeLightBox:hover {
+	top:2px;
+	background-position:-52px -26px;
+}
+
+#lightBox #nextImg:hover {
+	top:53px;
+	background-position:-26px -26px;
+}
+
+#lightBox #prevImg:hover {
+	top:82px;
+	background-position:0 -26px;
+}
+
+.imgWrap {
+	position:relative;
+	margin:0 auto;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/

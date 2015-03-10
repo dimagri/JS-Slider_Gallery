@@ -1,0 +1,58 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Index</title>
+<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+
+</head>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<ul id="slide">
+			<li data-num="1" class="item"><img alt="" src="images/img1.jpg" /></li>
+			<li data-num="2" class="item"><img alt="" src="images/img2.jpg" /></li>
+			<li data-num="3" class="item"><img alt="" src="images/img3.jpg" /></li>
+			<li data-num="4" class="item"><img alt="" src="images/img4.jpg" /></li>
+			<li data-num="5" class="item"><img alt="" src="images/img5.jpg" /></li>
+			<li data-num="6" class="item"><img alt="" src="images/img6.jpg" /></li>
+			<li data-num="7" class="item"><img alt="" src="images/img7.jpg" /></li>
+			<li data-num="8" class="item"><img alt="" src="images/img8.jpg" /></li>
+			<li data-num="9" class="item"><img alt="" src="images/img9.jpg" /></li>
+			<li data-num="10" class="item"><img alt="" src="images/img10.jpg" /></li>
+		</ul>
+		<input type="button" id="bigSlidePrev" >
+		<input type="button" id="bigSlideNext" >
+	</div>
+	<div class="thumbsWrap">
+		<ul class="thumbs">
+			<li class="active"><img alt="" src="images/img1s.jpg" /></li>
+			<li><img alt="" src="images/img2s.jpg" /></li>
+			<li><img alt="" src="images/img3s.jpg" /></li>
+			<li><img alt="" src="images/img4s.jpg" /></li>
+			<li><img alt="" src="images/img5s.jpg" /></li>
+			<li><img alt="" src="images/img6s.jpg" /></li>
+			<li><img alt="" src="images/img7s.jpg" /></li>
+			<li><img alt="" src="images/img8s.jpg" /></li>
+			<li><img alt="" src="images/img9s.jpg" /></li>
+			<li><img alt="" src="images/img10s.jpg" /></li>
+		</ul>
+		<input type="button" id="thumbsPrev" style="display:none">
+		<input type="button" id="thumbsNext" >
+	</div>
+
+	<div id="lightBox">
+		<div class="imgWrap" onmousedown="return false" onselectstart="return false">
+			<img src="" id="bigImg" style="position: relative;" />
+			<a id="nextImg"></a>
+			<a id="prevImg"></a>
+			<a id="closeLightBox"></a>
+		</div>
+	</div>
+	
+	</div><script src="js/slider.js"></script>
+</body>
+</html>
