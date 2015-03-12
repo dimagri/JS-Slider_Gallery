@@ -189,7 +189,7 @@ ul.thumbs li.active{
 }
 
 #lightBox #closeLightBox {
-	top:2px;
+	top:0;
 	background-position:-52px 1px;
 }
 
@@ -221,6 +221,7 @@ ul.thumbs li.active{
 .imgWrap {
 	position:relative;
 	margin:0 auto;
+	text-align:left;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/

@@ -1,9 +1,12 @@
 jQuery(document).ready(function(){
 
 	var sliderWidth = 600;
+	var imgWrapWidth = 800;
+	var arrowsWidth = 45;
+	var animationSpd = 500;
+	$(".imgWrap").width(imgWrapWidth + arrowsWidth);
 	var slideWrap = $("#slide");
 	var a = (- sliderWidth);
-	var animationSpd = 500;
 	var slidesAmount = $(".thumbs li:last").index()+1;
 	var i;
 	
@@ -25,9 +28,8 @@ jQuery(document).ready(function(){
 		}
 		
 		var i = $(".item:first").data("num");
-		if (i == slidesAmount){i=0;};
-		$('ul.thumbs li.active').removeClass("active");
-		$("ul.thumbs li").eq(i).addClass("active");
+		if (i == slidesAmount){i = 0;};
+		addActiveClass(i);
 	});
 	
 	
@@ -119,6 +121,7 @@ jQuery(document).ready(function(){
             $("#lightBox").hide();
         });
     });
+	
 	
 	function changeSource(i) {
 		var imgSrc = $('#slide [data-num="'+i+'"] img');
